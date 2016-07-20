@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
   <head>
     <meta charset="UTF-8">
     <title>Start Point</title>
-    <!-- Dependencies-->
-    <script src="/node_modules/angular/angular.js"></script>
     
+    <script src="/node_modules/angular/angular.js"></script>
+
   </head>
   <body>
+
+  <section ng-controller="mainController">
+    <p>{{placeholder}}</p>
+    <ul ng-repeat="item in items">
+      <li>{{item}}</li>
+    </ul>
+  </section>
+
+
+    <!-- Dependencies-->
+    <script src="/js/app.js"></script>
+    <script src="/js/mainController.js"></script>
     <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
   </body>
   
